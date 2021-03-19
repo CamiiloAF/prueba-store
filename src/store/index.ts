@@ -1,15 +1,8 @@
+import LoginModule from "@/components/store/modules/login_module";
 import { createStore } from "vuex";
 
 export default createStore({
-  state: {
-    nombre: 'Mi nombre'
-  },
-  mutations: {},
-  actions: {},
-  modules: {},
-  getters: {
-    getNombre(state) {
-      return state.nombre;
+    modules: {
+        LoginModule,
     }
-  }
 });
